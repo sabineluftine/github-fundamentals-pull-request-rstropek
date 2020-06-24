@@ -28,7 +28,7 @@ $(() => {
             const result = conversion
                 .find(c => c.from === fromScaleUnit.val() && c.to == toScaleUnit.val())
                 .convertFunc(valueInput.val());
-            resultText.text(`The result is ${result}`);
+            resultText.text(`This is a Test`);
         }
     });
 
