@@ -18,13 +18,11 @@ $(() => {
     function fromMeterToCentimeter(value) {
         return value * 100;
     }
-    // ============================================================================================
 
     conversion.forEach(c => fromScaleUnit.append($('<option>', { text: c.from })));
     fromScaleUnit.val(conversion[0].from);
     refreshToSelect();
     fromScaleUnit.change(refreshToSelect);
-
     convertButton.click(() => {
         if (valueInput.val() && fromScaleUnit.val() && toScaleUnit.val()) {
             const result = conversion
