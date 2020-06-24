@@ -13,6 +13,8 @@ $(() => {
 
         // You can specify inline conversions
         { from: 'cm', to: 'm', convertFunc: value => value / 100 },
+        { from: 'x', to: 'y', convertFunc: value => value * 3 },
+        { from: 'a', to: 'b', convertFunc: value => value + 4 },
     ];
     
     function fromMeterToCentimeter(value) {
